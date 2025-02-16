@@ -1,0 +1,30 @@
+name: Build and Run Docker Compose
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Set up Docker Compose
+        run: sudo apt-get install docker-compose
+
+      - name: Build and run Docker Compose
+        run: docker-compose up -d
+
+      - name: Wait for MySQL to be ready
+        run: |
+          while ! docker exec $(docker ps -q -f name=db) mysqladmin ping -h"127.0.0.1" --silent; do
+            echo "Waiting for MySQL to be ready..."
+            sleep 2
+          done
