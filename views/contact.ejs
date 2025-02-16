@@ -1,0 +1,39 @@
+<%- include("layouts/hedear") %>
+
+<!-- Contact Section -->
+<section class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 animate__animated animate__fadeIn">Contactez-nous</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 animate__animated animate__fadeInUp">
+        <form action="/contact" method="POST">
+          <div class="form-group mb-4">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group mb-4">
+            <label for="service" class="form-label">Service</label>
+            <select class="form-control" id="service" name="service">
+              <option value="Stratégie Marketing">Stratégie Marketing</option>
+              <option value="Publicité en Ligne">Publicité en Ligne</option>
+              <option value="Analyse de Données">Analyse de Données</option>
+            </select>
+          </div>
+          <div class="form-group mb-4">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg animate__animated animate__pulse animate__infinite">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include("layouts/footer") %>

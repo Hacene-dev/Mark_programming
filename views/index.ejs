@@ -1,0 +1,98 @@
+<%- include("layouts/hedear") %>
+
+<!-- Hero Section -->
+<section class="hero-section bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 animate__animated animate__fadeInDown">Bienvenue sur Notre Agence de Développement</h1>
+    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Nous transformons vos idées en solutions numériques innovantes.</p>
+    <a href="#services" class="btn btn-light btn-lg animate__animated animate__fadeInUp animate__delay-2s">Découvrir nos services</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 animate__animated animate__fadeIn">Nos Services</h2>
+    <div class="row">
+      <!-- Portfolio Development -->
+      <div class="col-md-4 text-center">
+        <div class="card mb-4 animate__animated animate__fadeInLeft animate__delay-1s">
+          <div class="card-body">
+            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+            <h3 class="card-title">Portfolio en Ligne</h3>
+            <p class="card-text">Créez un portfolio professionnel pour mettre en valeur vos compétences et projets.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Stock Management -->
+      <div class="col-md-4 text-center">
+        <div class="card mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="card-body">
+            <i class="fas fa-warehouse fa-3x mb-3 text-primary"></i>
+            <h3 class="card-title">Gestion de Stock</h3>
+            <p class="card-text">Solutions logicielles pour gérer efficacement vos stocks et inventaires.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Backend Development -->
+      <div class="col-md-4 text-center">
+        <div class="card mb-4 animate__animated animate__fadeInRight animate__delay-1s">
+          <div class="card-body">
+            <i class="fas fa-server fa-3x mb-3 text-primary"></i>
+            <h3 class="card-title">Développement Backend</h3>
+            <p class="card-text">Conception et développement de systèmes backend robustes et sécurisés.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 animate__animated animate__fadeIn">Ce que disent nos clients</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <div class="testimonial-card p-4 animate__animated animate__fadeInLeft animate__delay-1s">
+          <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+          <p class="font-italic">"Une équipe professionnelle et réactive. Nos résultats ont augmenté de 50% !"</p>
+          <p class="font-weight-bold">– Jean Dupont, CEO de XYZ</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="testimonial-card p-4 animate__animated animate__fadeInUp animate__delay-1s">
+          <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+          <p class="font-italic">"Leur expertise en développement web est impressionnante. Je recommande !"</p>
+          <p class="font-weight-bold">– Marie Martin, Fondatrice de ABC</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="testimonial-card p-4 animate__animated animate__fadeInRight animate__delay-1s">
+          <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+          <p class="font-italic">"Un partenariat fructueux. Nous avons atteint nos objectifs rapidement."</p>
+          <p class="font-weight-bold">– Paul Leroy, Directeur de 123</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section bg-primary text-white text-center py-5">
+  <div class="container">
+    <h2 class="mb-4 animate__animated animate__fadeIn">Prêt à transformer votre business ?</h2>
+    <a href="/contact" class="btn btn-light btn-lg animate__animated animate__fadeInUp animate__delay-1s">Contactez-nous</a>
+  </div>
+</section>
+
+<%- include("layouts/footer") %>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Animate.css Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/public/css/index.css">

@@ -1,0 +1,34 @@
+/* Custom Styles */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-section .form-control {
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact-section .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Animation for the button */
+  .animate__pulse {
+    animation-duration: 1.5s;
+  }
